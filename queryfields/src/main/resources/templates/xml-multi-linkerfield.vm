@@ -1,5 +1,5 @@
 #if($value)
     #foreach ($selVal in $setVals.entrySet())
-    ${selVal.value.getFullData()}#if($velocityCount != $setVals.size()),#end
+    <customfieldvalue>${selVal.value.getFullData()}</customfieldvalue>###if($velocityCount != $setVals.size()),#end ## commas not needed since we use customfieldvalue wrapper
     #end
 #end
